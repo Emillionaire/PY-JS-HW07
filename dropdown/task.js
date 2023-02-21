@@ -9,9 +9,7 @@ function dropdownItemClick (event) {
 }
 
 // Start handler dropdown value
-dropdownValue.addEventListener('click', event => dropdownList.classList.toggle('dropdown__list_active'))
+dropdownValue.addEventListener('click', () => dropdownList.classList.toggle('dropdown__list_active'))
 
 // Start handler dropdown items
-dropdownItems.forEach((element) => {
-    element.addEventListener('click', dropdownItemClick)
-})
+dropdownItems.forEach((element) => {element.addEventListener('click', dropdownItemClick)})

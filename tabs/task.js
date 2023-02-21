@@ -9,6 +9,5 @@ function tabSwitcher (event) {
     tabContentList[tabList.indexOf(event.target)].classList.add('tab__content_active')
 }
 
-
 // Start handler tab
 tabList.forEach((element) => {element.addEventListener('click', tabSwitcher)})
