@@ -4,6 +4,7 @@ const dropdownItems = Array.from(document.getElementsByClassName('dropdown__link
 
 // Dropdown item activator
 function dropdownItemClick (event) {
+    dropdownList.classList.toggle('dropdown__list_active')
     dropdownValue.textContent = this.textContent
     event.preventDefault();
 }
